@@ -17,7 +17,7 @@ class SignUp extends Component {
     return (
       <div>
         <h1>{this.state.email}</h1>
-        <label htmlFor="email">Your e-mail address :</label>
+        <label htmlFor="email">Your e-mail address please :</label>
         <input
           id="email"
           type="email"
