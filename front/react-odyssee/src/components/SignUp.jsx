@@ -4,9 +4,9 @@ class SignUp extends Component {
   constructor(props) {
     super(props);
     this.state = { email: "lalala@lalala.com" };
-    this.handleChange = this.handleChange.bind(this);
+    this.updateEmailField = this.updateEmailField.bind(this);
   }
-  handleChange(event) {
+  updateEmailField(event) {
     let value = event.target.value;
     this.setState({
       email: event.target.value,
@@ -23,7 +23,7 @@ class SignUp extends Component {
           type="email"
           name="email"
           value={this.state.email}
-          onChange={this.handleChange}
+          onChange={this.updateEmailField}
         />
       </div>
     );
