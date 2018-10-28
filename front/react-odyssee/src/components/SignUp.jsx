@@ -35,15 +35,16 @@ class SignUp extends Component {
     });
   }
 
-  handleSubmit(e) {
+  handleSubmit = e => {
     e.preventDefault();
-    console.log("A name was submitted : " + this.state);
-  }
+    console.log("A name was submitted : ");
+    console.log(this.state);
+  };
 
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <h2>{JSON.stringify(this.state)}</h2>
           <label htmlFor="lastname">Your lastname :</label>
           <input
