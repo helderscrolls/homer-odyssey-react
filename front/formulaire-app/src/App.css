@@ -1,11 +1,18 @@
 .content {
   margin-top: 25px;
+  padding-top: 25px;
   text-align: center;
   border: 5px solid #a596c4;
   border-radius: 35px;
-  margin-left: 25%;
-  margin-right: 25%;
+  width: 400px;
   padding-bottom: 25px;
   color: #a596c4;
   background-color: #0b2242;
+}
+
+input {
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  border-radius: 10px;
+  border-style: ridge;
 }
